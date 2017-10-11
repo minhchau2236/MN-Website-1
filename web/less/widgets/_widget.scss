@@ -1,0 +1,14 @@
+/* widget */
+.widget{
+	&-content{padding-left:10px}
+}
+
+.thumb{
+	margin-bottom:10px;
+	overflow:hidden;	
+	height:155px;
+	@media (max-width:400px){
+		height:auto;
+	}
+	img{max-width:100%;width:100%;}
+}

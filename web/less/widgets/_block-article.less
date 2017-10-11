@@ -1,0 +1,85 @@
+/*article*/
+.article{	
+	&-thumb{
+		overflow:hidden;
+		img{max-width:100%;width:100%;}
+	}
+	&-title{
+		&:extend(.txt-title);
+		margin-top:20px;
+		a{			
+			&:hover{color:@yellow;}
+		}
+	}
+	&-description{
+		&:extend(.txt-description);	
+	}
+	.datetime{	
+		position:absolute;
+		bottom:30px;
+		right:30px;
+		width: 95px;
+		height: 100px;
+		padding:10px 0 0 0;		
+		text-align:center;
+		text-transform:uppercase;
+		color:@white;
+		background-color:@blue;
+		border-radius: 5px;
+		.date{
+			&:extend(.txt-day);
+		}
+		.month,.year{
+			&:extend(.txt-month);
+			display:block;
+		}
+		.year{margin-top:-1px;}
+		
+	}
+	.see-more{
+		text-align:left;
+		margin-top:20px;
+		&:hover{
+			.icon{color:@yellow;border-color:@yellow;}
+		}
+	}
+	
+}
+
+.news-slider{
+	.owl-nav{
+		width:50%;
+		.owl-prev{float:left;}
+		.owl-next{float:right;}
+	}
+	.owl-nav [class*=owl-] {
+		width:18px;
+		height:36px;
+		margin:0;
+		padding:0;
+		display:block;
+	}
+	.owl-next-icon{		
+		background:@grey-4 url('../imgs/nav/next.png') no-repeat !important;
+		&:hover{
+			background-image:url('../imgs/nav/next-hover.png')!important;
+		}
+	}
+	.owl-prev-icon{		
+		background:@grey-4 url('../imgs/nav/prev.png') no-repeat !important;
+		&:hover{
+			background-image:url('../imgs/nav/prev-hover.png')!important;
+		}
+	}
+	.owl-dots{margin:15px 0 0 0;}
+	
+	&.owl-theme .owl-dots .owl-dot{width:27px;}
+	&.owl-theme .owl-dots .owl-dot.active span, 
+	&.owl-theme .owl-dots .owl-dot:hover span{
+		background:transparent;
+		border:3px solid@yellow;
+		width:13px;
+		height:13px;
+	}
+	&.owl-carousel .owl-stage-outer{margin-bottom:25px;}
+}
