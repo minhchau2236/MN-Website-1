@@ -1,0 +1,128 @@
+//
+// Variables
+// Note: khai báo biến
+// --------------------------------------------------
+
+
+@transition:all 0.2s ease;
+@strShadow:0 2px 4px rgba(0,0,0,.05);
+
+//== Colors
+//
+@white:    #fff;
+@black:    #000;
+@yellow:   #c8b964;
+@blue:     #004280;
+
+@grey:     #e2e2e2;
+@grey-2:   #777;
+@grey-3:   #b9c2d3;
+@grey-4:   #f3f3f3;
+@grey-5:   #ababab;
+@grey-6:   #919191;
+@grey-7:   #c6c6c6;
+
+@black-1: #181818;
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+@body-bg:               #fff;
+//** Global text color on `<body>`.
+@text-color:            @black;
+
+//** Global textual link color.
+@link-color:            @blue;
+//** Link hover color.
+@link-hover-color:      @yellow;
+//** Link hover decoration.
+@link-hover-decoration: underline;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+@font-family-sans-serif:  'Montserrat',Arial, Helvetica, sans-serif;
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-base:          14px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+@font-size-h1:            floor((@font-size-base * 7.86)); // ~110px
+@font-size-h2:            floor((@font-size-base * 5.14)); // ~72px
+@font-size-h3:            ceil((@font-size-base * 3.21));  // ~45px
+@font-size-h4:            ceil((@font-size-base * 2.57));  // ~36px
+@font-size-h5:            ceil((@font-size-base * 2));     // ~28px
+@font-size-h6:            ceil((@font-size-base * 1.86));  // ~26px
+@font-size-h7:            ceil((@font-size-base * 1.71));  // ~24px
+@font-size-h8:            ceil((@font-size-base * 1.25));  // ~18px
+@font-size-h9:            ceil((@font-size-base * 1.21));  // ~17px
+@font-size-h10:           @font-size-base;
+@font-size-h11:           ceil((@font-size-base * 0.85)); // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.428571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    inherit;
+@headings-font-weight:    500;
+@headings-line-height:    1.1;
+@headings-color:          inherit;
+
+
+
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+
+
+//== Dropdowns
+//
+//## Dropdown menu container and contents.
+
+
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+// Extra small screen / phone
+//** Deprecated `@screen-xs` as of v3.0.1
+@screen-xs:                  480px;
+//** Deprecated `@screen-xs-min` as of v3.2.0
+@screen-xs-min:              @screen-xs;
+//** Deprecated `@screen-phone` as of v3.0.1
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+//** Deprecated `@screen-sm` as of v3.0.1
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+//** Deprecated `@screen-tablet` as of v3.0.1
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `@screen-md` as of v3.0.1
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+//** Deprecated `@screen-desktop` as of v3.0.1
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `@screen-lg` as of v3.0.1
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
+@screen-lg-desktop:          @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
