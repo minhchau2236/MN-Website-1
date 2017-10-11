@@ -1,0 +1,21 @@
+
+.breadcrumb{
+	background-color:$white;
+	padding:10px 0;
+	line-height:20px;
+	@extend .txt-breadcrumb;
+	a{	
+		color:$yellow;
+		&:hover{color:$grey-5;}
+	}
+	>.active {
+		color: $grey-5;
+		a{color:inherit;}
+	}
+	
+}
+.breadcrumb>li+li:before {
+    padding: 0 15px;    
+    content: "";
+	background:url('../imgs/breadcrumb-arrow.png') no-repeat center center;
+}
