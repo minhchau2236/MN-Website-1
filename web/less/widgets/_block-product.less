@@ -34,6 +34,7 @@
 		img{max-width:100%;}
 	}
 	.btn-pr-search{
+		.transform(@strTransform0);
 		visibility:hidden;
 		position:absolute;
 		top:50%;		
@@ -45,10 +46,15 @@
 		background:@yellow url(../imgs/icons/icon-search.png) no-repeat center;
 		border-radius:50%;
 		color:@white;
+		border:2px solid @yellow;
 	}
 	&:hover{
 		.btn-pr-search{
 			visibility:visible;
+			.transform(@strTransform1);
+			&:hover{
+				background-color:transparent;
+			}			
 		}
 		.pr-name-1{
 			color:@blue;
@@ -111,27 +117,3 @@
 	&.owl-carousel .owl-stage-outer{margin-bottom:25px;}
 }
 
-.customBtn{
-	@media(max-width:1000px){
-		display:none;
-	}
-	width:29px;
-	height:56px;
-	position:absolute;
-	top:30%;
-	z-index:1;
-	&.next{
-		right:0;
-		background:transparent url('../imgs/nav/next-large.png') no-repeat !important;
-		&:hover{
-			background-image:url('../imgs/nav/next-large-hover.png')!important;
-		}
-	}
-	&.prev{
-		left:0;
-		background:transparent url('../imgs/nav/prev-large.png') no-repeat !important;
-		&:hover{
-			background-image:url('../imgs/nav/prev-large-hover.png')!important;
-		}
-	}
-}
