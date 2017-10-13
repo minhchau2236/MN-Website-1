@@ -1,15 +1,15 @@
 
 .breadcrumb{
-	background-color:$white;
+	background-color:@white;
 	padding:10px 0;
 	line-height:20px;
-	@extend .txt-breadcrumb;
+	&:extend(.txt-breadcrumb);
 	a{	
-		color:$yellow;
-		&:hover{color:$grey-5;}
+		color:@yellow;
+		&:hover{color:@grey-5;}
 	}
 	>.active {
-		color: $grey-5;
+		color: @grey-5;
 		a{color:inherit;}
 	}
 	
