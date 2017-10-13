@@ -1,5 +1,5 @@
 .banner.style-1{
-	background:$grey;
+	background:@grey;
 	padding-bottom:20px;
 	max-height:660px;
 	.banner-bg{
@@ -9,4 +9,19 @@
 		
 	}
 	.customBtn{top:50%;}
+}
+
+.banner.style-2{	
+	background:@grey;
+	padding-bottom:20px;
+	.banner-bg{
+		height:380px;		
+		background-size:cover cover;
+		
+		&.page-news{
+			background: url(../imgs/page-san-pham/banner.png) no-repeat;
+		}
+	}
+	
+	h1{padding-top:100px;}
 }

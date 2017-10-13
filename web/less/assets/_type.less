@@ -1,8 +1,8 @@
 //
 // Typography
 // --------------------------------------------------
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&subset=latin-ext,vietnamese');
+//@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+//@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&subset=latin-ext,vietnamese');
 
 
 // Body text
@@ -89,7 +89,7 @@ body{
 	}
 }
 .txt-description{	
-	color: $black;
+	color: @black;
 	font-size: 19px;
 	font-weight: 500;
 	line-height: 30px;
@@ -99,10 +99,7 @@ body{
 	font-size: 15px;
 	font-weight: 500;
 	line-height: 30px;
-	a{
-		color:inherit;
-		&:hover{color:@white;}
-	}
+	
 }
 .txt-day{
 	font-size: 32px;
@@ -166,6 +163,23 @@ body{
 	text-transform:capitalize;
 }
 
+// media
+// -------------------------
+
+.media-name{	
+	color: @black;
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 30px;
+}
+// btn
+// -------------------------
+
+.btn{	
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 30px;
+}
 // footer
 // -------------------------
 .txt-header-footer{	
