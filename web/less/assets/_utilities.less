@@ -38,10 +38,17 @@ a{
 	&30{margin-bottom:30px;}
 	&35{margin-bottom:35px;}
 	&40{margin-bottom:40px;}
+	&50{margin-bottom:50px;}
 }
 
 // BUTTON
 // -----------------------------
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: none;
+    outline-offset: 0;
+	box-shadow:none;
+}
+
 .customBtn{
 	@media(max-width:1000px){
 		display:none;
@@ -53,14 +60,14 @@ a{
 	z-index:1;
 	&.next{
 		right:0;
-		background:transparent url('../imgs/nav/next-large.png') no-repeat !important;
+		background:transparent url('../imgs/nav/next-large.png') no-repeat;
 		&:hover{
 			background-image:url('../imgs/nav/next-large-hover.png')!important;
 		}
 	}
 	&.prev{
 		left:0;
-		background:transparent url('../imgs/nav/prev-large.png') no-repeat !important;
+		background:transparent url('../imgs/nav/prev-large.png') no-repeat;
 		&:hover{
 			background-image:url('../imgs/nav/prev-large-hover.png')!important;
 		}
@@ -71,7 +78,7 @@ a{
 	width:160px;
 	margin-top:20px;
 	color:@white;
-	border:1px solid @yellow;
+	border:3px solid @yellow;
 	background:transparent;
 	border-radius:5px;
 	padding:10px 15px;
