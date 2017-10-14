@@ -1,16 +1,63 @@
 1) Trang chủ
    // Sản phẩm
-2. Sản phẩm
-3. Sản phẩm collection
-4. Sản phẩm collection detail
+2) Sản phẩm
+3) Sản phẩm collection
+4) Sản phẩm collection detail
    // Tin tức
 5) Tin tức
 6. Tin tức detail
 7) Tin tức - media
-8. Tin tức - media - photo
-9. Tin tức - media - video
+8) Tin tức - media - photo
+9) Tin tức - media - video
 	// Cửa hàng
 10. Cửa hàng
 	// Tuyển dụng
 11. Tuyển dụng
 12. Tuyển dụng - popup
+
+##############################################################
+https://github.com/minhchau2236/MN-Website-1
+
+##############################################################
+fodler portohtml-572
+
+tab (loc)
+	demo-business-consulting-cases.html
+	shortcodes-image-gallery.html
+	
+post meta
+	demo-construction-blog-detail.html
+	demo-digital-agency-work-detail.html
+	demo-restaurant-press-detail.html
+	
+porduct deatail
+	demo-construction-projects-detail.html
+	shop-single-product.html
+news
+	demo-finance-news.html
+	
+popup
+	demo-finance-team.html
+	
+slider popup xem ảnh
+	demo-gym-about-us.html
+	demo-real-estate-properties-detail.html
+
+view video
+	demo-hotel.html
+	
+breadcrum
+	demo-medical-doctors.html
+
+view more
+	demo-photography-2-portfolio-ajax-on-page.html
+	
+slider san pham
+	demo-photography-2-portfolio-detail-slider-with-thumbs
+	
+
+search sản phẩm
+	demo-real-estate-properties.html
+	
+check-box
+file:///L:/WORKS/PSC/_EmSang/html-beyond/form-inputs.html
