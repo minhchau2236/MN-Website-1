@@ -1,0 +1,138 @@
+// content page product
+.page-poduct-collection{
+	overflow:hidden;
+	
+	.breadcrumb{
+		margin:40px 0 0 0;
+	}
+	
+	.filter-product{
+		margin:20px 0 0 0;
+		.nav{display:inline-block}
+		.btn.btn-tab{margin:5px;}
+	}
+	
+	.block-title.style-2 {
+		margin: 30px 0 0 0;
+	}
+	.block.products{
+		background: url(../imgs/bg-txt-SanPham.png) no-repeat top 20px center;
+	}
+}
+
+.poduct-collection{
+	.block.products{
+		background: url(../imgs/bg-txt-BOSUUTAP.png) no-repeat top 23px center;
+	}
+	.block-title {
+		margin: 60px 0 10px 0;
+	}
+}
+.search-product{
+	min-height:200px;
+	padding:45px 0;
+	background: url(../imgs/bg-search-pr.png) no-repeat;
+	background-size:cover;	
+	
+	.dropdown{
+		width:100%;
+		&.open{
+			.btn-search-product{color:@yellow; border-color:@yellow;margin-bottom:20px;}
+		}
+		.dropdown-menu{
+			width:100%;
+			background-color: @white;
+			border-radius: 6px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+			& >li>a{
+				&:extend(.txt-search-dropdown-menu);
+			}
+		}	
+	}
+	
+	// mau
+	.color-dropdown{
+		li{
+			padding:6px 0 5px 15px;
+			display:inline-block;
+		}
+		input[type="checkbox"] + label:before {
+			width: 24px;
+			height: 24px;
+			border-color:transparent;
+			margin-right:0;
+		}
+		input[type="checkbox"]:checked + label:before {
+			content: "\f00c";
+			color:@black;
+			line-height:24px;
+			font-size:14px;
+		}
+		
+		.checkbox-label{
+			&.colour-white::before{
+				border-color:@black;
+			}
+			&.colour-red::before{
+				background-color: @red;
+			}
+			&.colour-yellow::before{
+				background-color:@yellow-2
+			}			
+		}
+		
+		
+	}
+	
+	// kich thuoc
+	.size-dropdown{	
+		.dropdown-menu{
+			padding:10px;
+			li{
+				border-bottom: 1px solid @yellow;
+				&:last-child{border-color:transparent;}
+				padding:10px 15px;
+				&:extend(.txt-search-dropdown-menu);
+			}
+		}
+	}
+}
+
+
+// checkbox text
+.dropdown-menu{
+	input[type="checkbox"] {
+		display: none;
+	}
+
+	input[type="checkbox"] + label, input[type="radio"] + label {
+		cursor: pointer;
+		margin-bottom: 0;		
+		text-transform: none;
+		letter-spacing: normal;
+		color: #7a7a7a;
+		font-size: 13px;
+	}
+
+	input[type="checkbox"] + label:before {
+		width: 16px;
+		height: 16px;
+		background-color: @white;
+		border:1px solid @yellow;
+		content: "";
+		display: inline-block;
+		font-size: 15px;
+		margin: -4px 12px 0 0;
+		text-align: center;
+		vertical-align: middle;
+		cursor: pointer;
+	}
+
+	input[type="checkbox"]:checked + label:before {
+		content: "\f0c8";
+		font-family: "FontAwesome";
+		color: @yellow;
+		font-size: 12px;
+		line-height: 15px;
+	}
+}

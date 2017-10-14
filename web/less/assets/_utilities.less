@@ -43,7 +43,7 @@ a{
 
 // BUTTON
 // -----------------------------
-.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus,.btn.active, .btn:active {
     outline: none;
     outline-offset: 0;
 	box-shadow:none;
@@ -88,7 +88,52 @@ a{
 		color:@white;
 	}
 }
+.btn-tab{
+	min-width:120px;	
+	color:@blue;
+	border:2px solid @yellow;
+	background:transparent;
+	border-radius:6px!important;
+	padding:5px!important;
+	
+	&:hover{
+		background-color:@yellow!important;	
+		color:@white;
+	}
+}
+.btn-search{
+	min-width:120px;	
+	color:@white;
+	border:2px solid @yellow;
+	background:@yellow;
+	border-radius:6px!important;	
+	
+	&:hover{
+		background-color:transparent;	
+		color:@yellow;
+	}
+}
 
+.btn-search-product{
+	text-align:left;
+	color:@white;
+	width: 100%;
+	height: 45px;
+	background:transparent;
+	border: 2px solid @white;
+	border-radius: 6px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+	.fa{
+		position:absolute;
+		font-size:25px;
+		top:10px;
+		right:12px;
+	}
+	&:hover,&:focus{			
+		color:@yellow;
+		border-color:@yellow;
+	}
+}
 .btn-download {
 	width:150px;
 	color:@white;
@@ -104,7 +149,13 @@ a{
 	}	
 }
 
-
-
-
-
+// active
+// ----------------------------------
+.active{
+	.btn-tab{
+		background:@yellow!important;
+	}
+}
+// background color
+// ----------------------------------
+.bg-grey{background:@grey-4;}

@@ -32,15 +32,9 @@
 			margin: 0 0 60px 0;		
 		}
 		.icon-play{
-			.transform(@strTransform0);
-			visibility:hidden;
-		}
-		.media-item:hover{
-			.icon-play{
-				visibility:visible;
-				.transform(@strTransform1);
-			}
-		}
+			.transform(@strTransform1);
+			visibility:visible;
+		}		
 	}
 
 	.block-download{
@@ -48,11 +42,25 @@
 		right: 0;
 		top: 0;		
 	}
-
+	// video datail
 	.video-detail{
 		margin-bottom: 70px;
 	}
 	 
+	.video-wrapper {
+		position: relative;
+	}
+	
+	.video-wrapper > video {
+		width: 100%;
+		vertical-align: middle;
+	}
+	
+	.video-wrapper > video.has-media-controls-hidden::-webkit-media-controls {
+		display: none;
+	}
+	
+	
 }
 .photo-section{
 	margin:20px 0 0 0;
