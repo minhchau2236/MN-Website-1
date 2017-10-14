@@ -1,0 +1,48 @@
+// content page tin tuc media
+.page-news-media-photo{
+	.btn-detail{
+		width:208px;
+		margin:40px 0;
+		color:@blue;
+		&:hover{
+			color:@white;
+		}
+	}
+
+	.breadcrumb {
+		margin-bottom: 0;
+	}
+	
+	.block.media-video{
+		position: relative;
+		margin-top: 0px; 
+		.block-title{
+			margin: 0 0 60px 0;		
+		}
+		.icon-play{
+			.transform(@strTransform0);
+			visibility:hidden;
+		}
+		.media-item:hover{
+			.icon-play{
+				visibility:visible;
+				.transform(@strTransform1);
+			}
+		}
+	}
+
+	.block-download{
+		position: absolute;
+		right: 0;
+		top: 0;		
+	}
+	 
+}
+.photo-section{
+	margin:20px 0 0 0;
+	
+	.media-video {
+		background: url(../imgs/bg-txt-PHOTO.png) no-repeat top 20px center;
+	}		
+	
+}
