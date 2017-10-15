@@ -1731,26 +1731,12 @@ a.nav-search {
 }
 .page-news-media-video-detail .video-header {
   position: relative;
-  color: #c6c6c6;
   margin-bottom: 20px;
 }
 .page-news-media-video-detail .video-header .video-title {
   font-size: 22px;
   color: #000000;
   font-weight: 500px;
-}
-.page-news-media-video-detail .social-icons {
-  display: inline;
-  margin-left: 10px;
-}
-.page-news-media-video-detail .social-icons li {
-  margin-right: 10px;
-}
-.page-news-media-video-detail .social-icons li:hover {
-  border-color: #c8b964;
-}
-.page-news-media-video-detail .social-icons li:hover a {
-  color: #c8b964;
 }
 .page-news-media-video-detail .breadcrumb {
   margin-bottom: 0;
@@ -1913,6 +1899,47 @@ a.nav-search {
   font-size: 12px;
   line-height: 15px;
 }
+.page-news-detail .belong-category {
+  height: 38px;
+}
+.page-news-detail .breadcrumb {
+  margin-bottom: 10px;
+}
+.page-news-detail .article-detail {
+  margin-top: 30px;
+}
+.photo-section {
+  margin: 20px 0 0 0;
+}
+.photo-section .media-video {
+  background: url(../imgs/bg-txt-PHOTO.png) no-repeat top 20px center;
+}
+.article-detail {
+  position: relative;
+}
+.article-detail .article-title {
+  width: calc(100% - 150px);
+}
+.article-detail .datetime {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+.article-detail .belong-category {
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.article-detail .belong-category a {
+  height: 38px;
+}
+.article-detail .article-content {
+  color: #000000;
+}
+.article-detail .article-content p {
+  color: #000000;
+  font-size: 18px;
+}
 /* social-icons */
 .social-icons {
   margin-top: 20px;
@@ -1951,6 +1978,22 @@ a.nav-search {
   text-align: center;
   color: #e2e2e2;
   text-decoration: none;
+}
+.social-icons.horizontal {
+  font-weight: 500;
+  font-size: 15px;
+  color: #c6c6c6;
+  display: inline;
+  margin-left: 10px;
+}
+.social-icons.horizontal li {
+  margin-right: 10px;
+}
+.social-icons.horizontal li:hover {
+  border-color: #c8b964;
+}
+.social-icons.horizontal li:hover a {
+  color: #c8b964;
 }
 /* links */
 .links li {

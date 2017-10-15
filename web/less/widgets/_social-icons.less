@@ -27,8 +27,22 @@
 			line-height: 45px;			
 			text-align: center;
 			color:@grey ;
-			text-decoration: none;
-			
+			text-decoration: none;			
 		}
 	}
+
+	&.horizontal {
+		font-weight: 500;
+		font-size: 15px;
+		color: @grey-7;
+		display: inline;
+		margin-left: 10px;
+		li{
+			margin-right: 10px;
+			&:hover{			
+				border-color:@yellow;
+				a{color:@yellow;}
+			}
+		}
+	}	
 }
