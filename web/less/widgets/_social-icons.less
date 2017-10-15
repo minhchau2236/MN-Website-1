@@ -46,3 +46,39 @@
 		}
 	}	
 }
+
+
+
+.share-social-icons{
+	margin: 20px 0 0 10px;	
+	display: inline-block;
+	.transition(@transition);
+	
+	li{
+		display: inline-block;
+		margin: -1px 2px 8px 0;
+		padding: 0;		
+		overflow: visible;
+		
+		
+		&:hover{			
+			color:@yellow;
+			a{color:inherit;border-color:@yellow;}
+		}
+		a{
+			.transition(@transition);   
+			border-radius: 100%;
+			display: inline-block;
+			width: 45px;
+			height: 45px;
+			font-size:25px;
+			line-height: 45px;			
+			text-align: center;
+			color:@grey ;
+			text-decoration: none;	
+			border: 2px solid @grey;
+			line-height:45px;		
+		}
+		span{margin: 0 0 0 5px;}
+	}
+}
