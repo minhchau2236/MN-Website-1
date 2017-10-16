@@ -1,0 +1,49 @@
+/* block shop-stores */
+.shop-stores{
+	
+	background: url(../imgs/bg-txt-STORES.png) no-repeat top 20px center;
+	.shop-row{
+		padding:40px 0 0 0;
+		&:first-child{
+			margin-top:-25px;
+			padding:0;
+		}
+		&:nth-child(even){
+			background:@grey-4;
+			.line-bottom{display:none;}
+		}
+		&:last-child{			
+			.line-bottom{display:none;}
+		}
+	}
+	
+	
+	.btn-detail{
+		width:208px;
+		margin:40px 0;
+		color:@blue;
+		&:hover{
+			color:@white;
+		}
+	}
+	.line-bottom.style-3{margin:0 50px 0 0;}
+
+}
+
+.shop-store-item{
+	margin:0 0 30px 0;
+	&:extend(.txt-shop-store);
+	h3{
+		&:extend(.txt-shop-store-h3);	
+	}	
+	h4{
+		&:extend(.txt-shop-store-h4);
+	}
+	.shop-store-contact{
+		margin:0 0 40px 0;
+		span{width:100px; color:@grey-9; display:inline-block;}
+		.shop-email,.shop-website{color:@yellow;}
+	}
+	.block-share{margin:0 0 15px 0;}
+	.btn{margin:0 15px 15px 0;}
+}
