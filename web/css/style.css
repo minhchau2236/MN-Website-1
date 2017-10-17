@@ -244,6 +244,14 @@ body {
     text-transform: capitalize;
 }
 
+.pr-price {
+    height: 16px;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
 .media-name {
     color: #000000;
     font-size: 22px;
@@ -269,6 +277,13 @@ body {
 .btn.btn-tab {
     font-size: 15px;
     font-weight: 400;
+}
+
+.btn.style-2 {
+    color: #004280;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
 }
 
 .btn-search-product,
@@ -497,6 +512,17 @@ afocus {
     color: #ffffff;
 }
 
+.btn-detail.btn-yellow {
+    width: 200px;
+    padding: 9px 15px;
+    background: #c8b964;
+    color: #ffffff;
+}
+
+.btn-detail.btn-yellow:hover {
+    background: transparent;
+}
+
 .btn-tab {
     min-width: 120px;
     color: #004280;
@@ -561,6 +587,26 @@ afocus {
 .btn-download:hover {
     background: transparent;
     color: #c8b964;
+}
+
+.btn.style-2 {
+    text-align: left;
+    min-width: 147px;
+    background-color: white;
+    border: 2px solid #c8b964;
+    border-radius: 6px;
+}
+
+.btn.style-2:hover {
+    background: #c8b964;
+    color: #ffffff;
+}
+
+.btn.style-2 i {
+    margin-right: 5px;
+    font-size: 22px;
+    line-height: 22px;
+    vertical-align: middle;
 }
 
 .active .btn-tab {
@@ -1226,20 +1272,25 @@ a.nav-search {
 }
 
 .banner.style-2 .banner-bg {
-    height: 380px;
-    background-size: cover cover;
+    min-height: 380px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .banner.style-2 .banner-bg.page-news {
-    background: url(../imgs/page-san-pham/banner.png) no-repeat;
+    background-image: url(../imgs/page-san-pham/banner.png);
 }
 
 .banner.style-2 .banner-bg.page-poduct {
-    background: url(../imgs/page-san-pham/banner.png) no-repeat;
+    background-image: url(../imgs/page-san-pham/banner.png);
 }
 
 .banner.style-2 .banner-bg.page-poduct-collection {
-    background: url(../imgs/page-san-pham/banner.png) no-repeat;
+    background-image: url(../imgs/page-san-pham/banner.png);
+}
+
+.banner.style-2 .banner-bg.page-poduct-collection-detail {
+    background-image: url(../imgs/page-san-pham/banner.png);
 }
 
 .banner.style-2 h1 {
@@ -2474,6 +2525,18 @@ a.nav-search {
     line-height: 15px;
 }
 
+.page-poduct-collection-detail h1.txt-title-banner {
+    padding-top: 50px;
+}
+
+.page-poduct-collection-detail .product .pr-name-3 {
+    color: #c8b964;
+}
+
+.page-poduct-collection-detail .product:hover .pr-name-3 {
+    color: #004280;
+}
+
 .page-news-detail .breadcrumb {
     margin-bottom: 10px;
 }
@@ -2597,7 +2660,95 @@ a.nav-search {
     min-height: 396px;
     background-color: #ffffff;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
-    padding: 20px 80px;
+    padding: 20px 30px 20px 80px;
+}
+
+.infobox.right:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: 1;
+    border-width: 30px;
+    border-style: solid;
+    border-color: transparent;
+    border-right-color: #ffffff;
+    left: -55px;
+    top: 50%;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.infobox.bottom:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: 1;
+    border-width: 30px;
+    border-style: solid;
+    border-color: transparent;
+    border-right-color: #ffffff;
+    left: calc(50% - 10px);
+    top: -10px;
+    -webkit-transform: translateY(-100%);
+    transform: translateX(-50%);
+}
+
+.infobox .shop-store-item .shop-store-contact {
+    margin: 0 0 20px 0;
+}
+
+.search-shop-store {
+    padding: 50px 0;
+    background: url(../imgs/bg-search-pr.png) no-repeat;
+    background-size: cover;
+}
+
+.search-shop-store select {
+    margin: 23px 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    padding: 0 15px;
+    background-image: url(../imgs/dropdown_white.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-color: transparent;
+    width: 100%;
+    height: 54px;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    outline-offset: 0;
+    outline: -webkit-focus-ring-color auto 0;
+}
+
+.search-shop-store select.map-select {
+    background-image: url(../imgs/marker_white.png);
+}
+
+.search-shop-store select.map-select:hover,
+.search-shop-store select.map-select:focus,
+.search-shop-store select.map-select:active {
+    border-color: #c8b964;
+    background-image: url(../imgs/marker_yellow.png);
+}
+
+.search-shop-store select:hover,
+.search-shop-store select:focus,
+.search-shop-store select:active {
+    border-color: #c8b964;
+    background-image: url(../imgs/dropdown_yellow.png);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.search-shop-store .btn-search {
+    height: 54px;
+    line-height: 40px;
+    width: 100%;
+    margin: 23px 0;
 }
 
 

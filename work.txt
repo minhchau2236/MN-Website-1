@@ -5,12 +5,12 @@
 4) Sản phẩm collection detail
    // Tin tức
 5) Tin tức
-6. Tin tức detail
+6) Tin tức detail
 7) Tin tức - media
 8) Tin tức - media - photo
 9) Tin tức - media - video
 	// Cửa hàng
-10. Cửa hàng
+10) Cửa hàng
 	// Tuyển dụng
 11. Tuyển dụng
 12. Tuyển dụng - popup

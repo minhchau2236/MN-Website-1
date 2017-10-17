@@ -15,18 +15,22 @@
 	background:@grey;
 	padding-bottom:20px;
 	.banner-bg{
-		height:380px;		
-		background-size:cover cover;
+		min-height:380px;		
+		background-size:cover;
+		background-repeat: no-repeat;
 		
 		&.page-news{
-			background: url(../imgs/page-san-pham/banner.png) no-repeat;
+			background-image: url(../imgs/page-san-pham/banner.png);
 		}
 		&.page-poduct{
-			background: url(../imgs/page-san-pham/banner.png) no-repeat;
+			background-image: url(../imgs/page-san-pham/banner.png);
 		}
 		&.page-poduct-collection{
-			background: url(../imgs/page-san-pham/banner.png) no-repeat;
+			background-image: url(../imgs/page-san-pham/banner.png);
 		}
+		&.page-poduct-collection-detail{
+			background-image: url(../imgs/page-san-pham/banner.png);
+		}	
 	}
 	
 	h1{padding-top:100px;}

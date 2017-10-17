@@ -87,6 +87,15 @@ a{
 		background:@yellow;	
 		color:@white;
 	}
+	&.btn-yellow{
+		width:200px;
+		padding: 9px 15px;
+		background: @yellow;
+		color: @white;
+		&:hover{
+			background: transparent;
+		}		
+	}
 }
 .btn-tab{
 	min-width:120px;	
@@ -147,6 +156,21 @@ a{
 		background:transparent;	
 		color:@yellow;
 	}	
+}
+
+.btn{
+	&.style-2{
+		text-align:left;
+		min-width: 147px;		
+		background-color: white;
+		border: 2px solid @yellow;
+		border-radius: 6px;
+		&:hover{
+			background:@yellow;
+			color:@white;
+		}
+		i{margin-right:5px;font-size:22px;line-height:22px; vertical-align: middle;}
+	}
 }
 
 // active
