@@ -240,14 +240,84 @@
 
         <!-- map -->
         <section>
-            <div id="map-canvas" style="height:413px;"></div>
+            <div id="map-canvas" style="height:660px;"></div>
+            <div class="infobox" style="display:none;">
+                <div class="shop-store-item">
+                    <h4>Minh Long I Co., Ltd - Head Office</h4>
 
+                    <div class="shop-store-contact">
+                        <p class="shop-address">Số 333, Đại lộ Bình Dương, Hưng Lộc, Hưng Định, Tx.Thuận An, Bình Dương.</p>
+                        <p class="shop-phone"><span>Điện thoại:</span> +84 650 3668899</p>
+                        <p class="shop-fax"><span>Fax:</span> +84 650 3724173</p>
+                        <p class="shop-email"><span>Email:</span> info@minhlong.com</p>
+                        <p class="shop-website"><span>Website:</span> www.minhlong.com</p>
+                    </div>
+
+                    <div class="mb-25">
+                        <a class="btn style-2" href="#" title="Xem bản đồ"><i class="mdi mdi-camera"></i>Xem hình ảnh</a>
+                    </div>
+
+                    <div class="block-share">
+                        <span>Chia sẻ:</span>
+                        <ul class="share-social-icons horizontal">
+                            <li class="social-icons-facebook">
+                                <a href="http://www.facebook.com/" target="_blank" title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="social-icons-google-plus">
+                                <a href="#" target="_blank" title="Google +">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li class="social-icons-facebook">
+                                <a href="#" target="_blank" title="Mail">
+                                    <i class="fa fa-envelope-o"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.shop-store-item -->
+            </div>
         </section>
 
         <!-- search -->
-        <section>
+        <section class="search-shop-store">
             <div class="container">
                 <div class="row">
+                    <div class="col-xs-3 col-sm-3 col-md-3">
+                        <select class="map-select">
+								<option value="">Cửa hàng gần nhất</option>
+								<option value="store-1">Cửa hàng 1</option>
+								<option value="store-2">Cửa hàng 2</option>
+								<option value="store-3">Cửa hàng 3</option>
+								<option value="store-4">Cửa hàng 4</option>
+								<option value="store-5">Cửa hàng 5</option>
+							</select>
+                    </div>
+
+                    <div class="col-xs-3 col-sm-3 col-md-3">
+                        <select class="nation-select">
+								<option value="">Quốc gia</option>
+								<option value="VN">Việt Nam</option>
+								<option value="USA">Mỹ</option>
+								<option value="China">Trung Quốc</option>								
+							</select>
+                    </div>
+
+                    <div class="col-xs-3 col-sm-3 col-md-3">
+                        <select class="city-select">
+								<option value="">Tỉnh/Thành Phố</option>
+								<option value="HCM">Hồ Chí Minh</option>
+								<option value="HaNoi">Hà Nội</option>								
+							</select>
+                    </div>
+
+                    <!-- Tìm kiếm -->
+                    <div class="col-xs-3 col-sm-3 col-md-3">
+                        <a class="btn btn-search" href="javascript:void(0)">Tìm kiếm</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -879,6 +949,7 @@
         }
     </style>
     <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsD2OQP8c4Q_uJlTnE4RkHOWPSHWIuggE"></script> -->
+    <script src="web/js/mapInfobox.js"></script>
     <script src="web/js/map.js"></script>
 </body>
 
