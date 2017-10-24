@@ -23,7 +23,7 @@
 	.navbar-nav {
 		margin-top:0px;
 		margin-bottom:0;
-		height:64px;
+		min-height:64px;
 	}
 
 	.navbar-collapse{
@@ -59,11 +59,21 @@
 	}
 }
 
-//mobile
-.navbar-toggle{
-	background-color:@blue;
-	.icon-bar{
-		background-color:@white;
+// toggle menu
+.btn-togglemenu{
+	display: none;
+	float: right;
+	margin-left: 20px;
+	@media(max-width:1100px){
+		display: block;
+		.navbar-toggle{
+			margin: 0;			
+			width: 58px;
+			height: 53px;
+			background: url('../imgs/icons/icon-menu.png') no-repeat center center;
+			border-radius: 0; 
+			background-size: contain;
+		}
 	}
 }
 

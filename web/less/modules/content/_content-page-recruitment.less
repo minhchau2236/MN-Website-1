@@ -1,0 +1,50 @@
+// page tuyển dụng
+
+.page-recruitment{
+    .city-select{
+        width:320px;
+        margin: 20px 0;
+    }
+    .btn-search{
+        width:240px;
+        padding: 10px 12px;
+        margin: 0 0 0 20px;
+    }
+    .btn-detail{
+        width:200px;       
+      
+        color: @blue;
+        &:focus,   
+        &:hover{
+            color:@white;
+            background-color: @yellow;
+            .expand-icon-wrap{
+                color: @white;
+                .mdi{
+                    border-color:@white;
+                }
+            }
+        }   
+    }
+    .btn-apply{
+        margin: 40px 0;
+    }
+}
+
+.recruitment-row{
+    margin-top: 40px;
+    &:extend(.txt-recruiment-detail);
+    
+    h2{&:extend(.txt-recruiment-head);}
+    h3{&:extend(.txt-recruiment-title);}
+
+    .btn-detail{               
+        position: relative;
+        padding: 10px 15px 10px 40px;
+    }
+    .row-detail{
+        background-color: @grey-4;
+        padding: 40px 0;
+    }
+    
+}
