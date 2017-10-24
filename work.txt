@@ -12,8 +12,46 @@
 	// Cửa hàng
 10) Cửa hàng
 	// Tuyển dụng
-11. Tuyển dụng
-12. Tuyển dụng - popup
+11) Tuyển dụng
+12) Tuyển dụng - popup
+
+################################################################
+header - icon
+>=769
++ cart: 32x26
++ search: 23x23	
+
+<=768
++ menu: 58x53
++ cart: 51x42
++ search: 53x53
+
+<=499
++ menu: 44x40
++ cart: 36x30
++ search: 30x30
+################################################################
+1) page index
+font-size: 60px;
+font-size: 45px;
+
+font-size: 28px;
+font-size: 24px;
+
+################################################################
+
+################################################################
+note:
+17.10.2017
+- chuyển bootstrap 12 col --> 24
+- responsive
+	+ index
+	+ cua-hang.html
+- tuyen-dung.html
+
+19.10.2017
+- responsive 
+	+ header
 
 ##############################################################
 https://github.com/minhchau2236/MN-Website-1
@@ -61,3 +99,9 @@ search sản phẩm
 	
 check-box
 file:///L:/WORKS/PSC/_EmSang/html-beyond/form-inputs.html
+
+###########################################################
+responsive
+###########################################################
+search
+	Theme-magento/_Shopping-cart/EMPOR%20-%20ECOMMERCE/emporhtml/main-file/HTML/index2.html

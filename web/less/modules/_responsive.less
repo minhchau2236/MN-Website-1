@@ -8,7 +8,129 @@
 	.container{width:100%;}
 }
 
-/* header */
+// header 
+// --------------------------------------------------
+.header{
+	@media(max-width:768px){
+		min-height: 120px;	
+		.navbar{padding: 30px 0; margin: 0;}
+		.nav-wrap .navbar-nav{padding: 30px 0 0 0;}
+		.nav-cart-wrap{border-color: transparent;}
+
+		.logo{
+			position: absolute;
+			margin: 0;
+			width: 73px;
+			top:20px;
+			z-index: 1;
+		}
+	}
+}
+.affix{
+	@media(max-width:1100px){
+		position: static;
+		animation: none;
+		height: auto;
+		.Utilities,.nav-wrap{margin: 0;}
+		.logo{padding: 0;}
+	}
+}
+.nav-cart-inner {
+ 	@media(min-width:500px) and (max-width:768px){
+		width: 51px;
+		height:42px;
+	}
+	@media (max-width:499px){
+		width: 36px;
+		height:30px;
+	}
+}
+.search-trigger {
+	@media (min-width:500px)and (max-width:768px){
+		width:53px;
+		height:53px;
+		top:-10%;		
+	}
+	@media (max-width:499px){
+		width:30px;
+		height:30px;
+		top:35%;		
+	}
+}
+.btn-togglemenu{	
+	@media(max-width:499px){
+		margin-top:5px;		
+		.navbar-toggle{		
+			width: 44px;
+			height: 40px;			
+		}
+	}
+}
+
+// type 
+// -----------------------------------------------
+
+@media(max-width:768px){
+	.txt-caption-banner{
+		font-size:60px;
+		line-height: 75px;	
+	}
+	.txt-title-banner{		
+		font-size: 72px;	
+		line-height: 80px;	
+	}
+	.txt-title-banner-small{	
+		font-size: 30px;	
+		line-height: 50px;
+	}
+}
+@media(max-width:600px){
+	.txt-caption-banner{
+		font-size: 0.75*60px;
+		line-height:0.75* 75px;	
+	}
+	.txt-title-banner{		
+		font-size: 72px;	
+		line-height: 80px;	
+	}
+	.txt-title-banner-small{	
+		font-size: 30px;	
+		line-height: 50px;
+	}
+}
+
+// page index
+// ----------------------------------------------
+@media(max-width:1000px){
+	.banner.style-1{	
+		.banner-bg{background-size: inherit;}
+	}
+	
+	.txt-two-intro{
+		width: 290px;
+		margin: 40px auto;
+	}
+
+	.main-slider .item-slider .item-wrapper{width: 100%;}
+
+	.line-bottom{height: 11px;}
+	
+}
+@media(max-width:639px){
+	.banner.style-1{	
+		.banner-bg{background-size: inherit;}
+	}
+	.main-slider .item-slider .item-wrapper{margin: 50px 0 30px 0;}
+
+	.special-section{
+		.col-left,.col-right{width: 100%;}		
+	}
+
+	.footer{
+		.f-col{width: 100%;}
+	}
+}
+
 
 
 /* footer */

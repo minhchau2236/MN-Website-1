@@ -1,6 +1,7 @@
+//  modal center
 .modal {
     text-align: center;
-    padding: 0!important;
+    padding: 0!important;    
 }
 
 .modal:before {
@@ -15,4 +16,181 @@
     display: inline-block;
     text-align: left;
     vertical-align: middle;
+}
+
+// custom
+.modal{
+    .modal-header{
+        border-bottom: 0;
+        position: relative; 
+        .close{
+            position: absolute;
+            top:5px;
+            right: 5px;
+            font-size: 26px;
+        }
+    }
+    .modal-body{padding: 15px 40px;}
+    .modal-content{
+        border-radius: 0;
+    }
+}
+.modal-backdrop.in {opacity: 0.85;}
+
+
+// apply
+.modal-apply{
+    &:extend(.txt-apply-content);
+
+    h2{&:extend(.txt-apply-head);}
+    h3{&:extend(.txt-apply-title);margin: 0;}  
+    
+    .field-wrap {
+        position: relative;
+        margin-bottom: 20px;       
+        height: 54px;      
+       
+    }
+
+    label {
+        position: absolute;
+        -webkit-transform: translateY(14px);
+        transform: translateY(14px);
+        left: 18px;        
+        -webkit-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+        -webkit-backface-visibility: hidden;
+        pointer-events: none;        
+        &.active,
+        &.highlight{    
+            -webkit-transform: translateY(0);
+            transform: translateY(0);           
+            font-size: 14px;
+        }
+        
+        span{font-weight: 300;}
+    }
+    input{                
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 20px 15px 5px 15px;
+        background: none;
+        background-image: none;
+        border: 2px solid @grey-7;
+        color: @black;
+        border-radius: 6px;
+        -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+        transition: border-color .25s ease, box-shadow .25s ease;
+    }
+    .sex-select{
+        margin: 0 0 20px 0;
+        border-color: @grey-7;
+        box-shadow: none;
+        background-image: url(../imgs/dropdown_grey.png);
+        &:hover,
+        &:focus{
+            background-image: url(../imgs/dropdown_yellow.png)!important;
+        }
+    }
+    input, select{
+        &:extend(.txt-apply-input);
+        &:hover,
+        &:focus{
+            border-color:@yellow;
+            outline: -webkit-focus-ring-color auto 0px;
+            outline-offset: 0;
+        }
+    }
+    p{margin:0;}
+
+    .btn-reset{
+        width:170px;
+        background-color:@grey-10;
+        color: @grey-6;
+        border: 2px solid transparent;
+        margin: 0 10px 15px 0;
+        &:hover{
+            background-color: transparent;
+            color: @grey-6;
+            border-color: @grey-10;
+        }
+    }
+    .btn-apply{  
+        width:170px;      
+        background-color: @yellow;
+        color:@white;
+        margin: 0 0 15px 0!important;
+        &:hover{
+            background-color: transparent;
+            color: @yellow;
+        }
+    }    
+}
+
+//file đính kèm
+.file-upload-wrapper {
+  @height: 54px;
+  
+  position: relative;
+  width: 100%;
+  height: @height;
+  
+  border: 2px solid @grey-7;
+  
+  &:after {
+    content: attr(data-text);
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding: 10px 40px 10px 15px;
+    display: block;
+    width: 100%;
+    pointer-events: none;   
+    height: @height - 20px;
+    line-height: @height - 20px;   
+	white-space: nowrap;
+	overflow:hidden;
+	 text-overflow: ellipsis; 
+  }
+  
+  &:before {
+	background:url('../imgs/icons/icon-folder_grey.png') no-repeat center center;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    height: @height;
+	width: 54px;
+    padding: 0 15px;
+    text-transform: uppercase;
+    pointer-events: none;
+    border-radius: 0 5px 5px 0;
+	z-index:1;
+  }
+  
+  &:hover {
+	border-color:@yellow;
+    &:before {
+      background-image:url('../imgs/icons/icon-folder.png')
+    }
+  }
+   input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    height: @height - 20px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+  }
 }

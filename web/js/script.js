@@ -30,7 +30,7 @@ $( document ).ready(function() {
 	});
 	
 	/* ------------------------------------------
-	  * owlCarousel - products
+	  * owlCarousel - main-slider (page index)
 	--------------------------------------------- */	
 	var owlMain = $(".main-slider.owl-carousel");
 	owlMain.owlCarousel({
@@ -77,7 +77,7 @@ $( document ).ready(function() {
     });
 	
 	/* ------------------------------------------
-	  * owlCarousel - products
+	  * owlCarousel - products (page index)
 	--------------------------------------------- */	
 	var owlPr = $(".products-slider.owl-carousel");
 	owlPr.owlCarousel({
@@ -92,12 +92,16 @@ $( document ).ready(function() {
         0:{
             items:1,
             nav:false
-        },
+		},
 		400:{
             items:2,
             nav:false
         },
-        600:{
+		768:{
+            items:2,
+            nav:false
+        },
+        900:{
             items:3,
             nav:false
         },
